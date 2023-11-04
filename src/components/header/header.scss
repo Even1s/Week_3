@@ -2,8 +2,6 @@
   background-color: #416AEBFF;
   color: #F1F1F1FF;
   padding: 6px 12px;
-  display: flex;
-  justify-content: space-between;
   &__links-block {
     display: flex;
     align-items: center;
@@ -17,4 +15,8 @@
       color: #F1F1F1FF;
     }
   }
+}
+.container {
+  display: flex;
+  justify-content: space-between;
 }

@@ -4,7 +4,9 @@
 
 <template>
   <footer class="footer">
-    <h1>footer</h1>
+    <div class="container">
+      <h1>footer</h1>
+    </div>
   </footer>
 </template>
 

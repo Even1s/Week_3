@@ -4,7 +4,9 @@
 
 <template>
   <main class="main">
-    <h1 class="title">Страница какая-то</h1>
+    <div class="container">
+      <h1 class="title">Страница какая-то</h1>
+    </div>
   </main>
 </template>
 
