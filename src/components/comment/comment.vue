@@ -37,7 +37,7 @@ onMounted(async ()=>{
 
 <template>
   <ul class="comment" :key="toLoad">
-    <li v-for="commentData in commentsData" class="comment__block">
+    <li v-for="commentData in commentsData" :key="commentData.id" class="comment__block">
       <p class="comment__author">by {{ commentData.by }}</p>
       <p class="comment__text" v-html="commentData.text"></p>
     </li>
