@@ -1,9 +1,14 @@
 .comment {
+  padding-left: 12px;
+  border-left: #ccc 2px solid;
   &__author {
     color: #858585;
     font-size: 14px;
   }
-  &__block {
-
+  &__list {
+    margin: 2px 0;
+    &::marker {
+      content: none;
+    }
   }
 }

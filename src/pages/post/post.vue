@@ -15,12 +15,21 @@ onMounted(()=>{
   axios.get(url).then(response => {
     postData = response.data
     isLoaded.value = !isLoaded.value
-    date = new Date(postData.time)
-    date = 'Date: ' + date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear() + ' ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds()
-    commentsCount = ref(postData.kids.length)
+    date = getDate(postData.time)
     // postData.comments = getComments(postData.kids)
   })
 })
+function getDate(unixTime) {
+  let agoTime
+  let now = Math.floor(Date.now()/1000)
+  agoTime = now - unixTime
+  if (agoTime < 60) return Math.round(agoTime) + ' seconds ago'
+  else if (agoTime < 60 * 60) return Math.round(agoTime/60) + ' minutes ago'
+  else if (agoTime < 60 * 60 * 24) return Math.round(agoTime/(60 * 60)) + ' hours ago'
+  else if (agoTime < 60 * 60 * 24 * 30) return Math.round(agoTime/(60 * 60 * 24)) + ' days ago'
+  else if (agoTime < 60 * 60 * 24 * 30 * 365) return Math.round(agoTime/(60 * 60 * 24 * 30)) + ' months ago'
+  else return Math.round(agoTime/(60 * 60 * 24 * 30 * 365)) + ' years ago'
+}
 // function getComments(commentsId) {
 //   let comments = []
 //   commentsId.forEach((commentId)=>{
