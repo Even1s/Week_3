@@ -1,0 +1,24 @@
+.comment {
+  padding-left: 12px;
+  border-left: #ccc 2px solid;
+  &__author {
+    color: #858585;
+    font-size: 14px;
+    padding-right: 20px;
+  }
+  &__list {
+    margin: 2px 0;
+    &::marker {
+      content: none;
+    }
+  }
+  &__block {
+    position: relative;
+    border-top: solid #858585 1px;
+    padding: 4px;
+  }
+  &__text {
+    word-wrap: break-word;
+    overflow-x: auto;
+  }
+}

@@ -1,0 +1,21 @@
+.post {
+  &__title {
+    font-size: 24px;
+    color: #1e1e1e;
+    text-decoration: none;
+  }
+  &__author {
+    color: #858585;
+    font-size: 20px;
+  }
+  &__comments-block {
+    & > .comment {
+      padding-left: 0;
+      border-left: 0;
+    }
+  }
+  &__main-block {
+    padding-right: 26px;
+    position: relative;
+  }
+}

@@ -1,6 +1,7 @@
 <script setup>
 import MyFooter from '@/components/footer/footer.vue';
 import MyHeader from '@/components/header/header.vue';
+
 </script>
 
 <template>

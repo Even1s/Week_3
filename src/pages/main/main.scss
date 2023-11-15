@@ -1,0 +1,40 @@
+.news {
+  min-height: 120vh;
+  &__to-post {
+    color: #1e1e1e;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__list {
+    margin: 2px 0;
+    position: relative;
+    border-top: solid #858585 1px;
+    padding: 4px;
+    &::marker {
+      content: none;
+    }
+    &:first-child {
+      border: 0;
+    }
+  }
+  &__title {
+    font-size: 22px;
+    color: #1e1e1e;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.container {
+  #reload {
+    position: static;
+  }
+}
+.reload-block {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
