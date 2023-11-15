@@ -58,12 +58,14 @@ watch(link,(newValue)=>{
     <div class="container">
       <loading v-if="!isLoaded"/>
       <div v-else class="post__main-block">
-        <a class="post__title" :href="postData.url">{{ postData.title }} <span class="post__author">by {{ postData.by }}</span></a>
+        <a class="post__title" :href="postData.url">{{ postData.title }}</a>
+        <span class="post__author"> by {{ postData.by }}</span>
         <p class="post__date">Date: {{ getDate(postData.time) }}</p>
         <p class="post__comments-count">Comments: {{ postData.descendants }}</p>
+        <p class="post__count">{{ postData.score }} karma</p>
         <reload-button @click="reloadPost(link)"/>
       </div>
-      <div class="post__comments-block" v-if="isLoaded">
+      <div class="post__comments-block" v-if="isLoaded && postData.kids">
         <comment :commentsId="postData.kids"/>
       </div>
     </div>

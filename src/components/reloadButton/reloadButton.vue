@@ -9,7 +9,7 @@
 </script>
 
 <template>
-  <button @click="reloadAnimate($event.target)">
+  <button id="reload" @click="reloadAnimate($event.target)">
     <img src="@/assets/replay.svg" alt="replies">
   </button>
 </template>

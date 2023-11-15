@@ -30,3 +30,10 @@ export function getComments(commentId) {
           .catch((error)=>{ reject(error) })
     })
 }
+export function getPostsIdNew() {
+    return new Promise((resolve, reject)=>{
+        axios.get('https://hacker-news.firebaseio.com/v0/newstories.json')
+            .then((response)=>{ resolve(response.data)})
+            .catch((error)=>{ reject(error) })
+    })
+}

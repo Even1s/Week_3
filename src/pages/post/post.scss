@@ -1,10 +1,8 @@
 .post {
   &__title {
     font-size: 24px;
-    color: black;
+    color: #1e1e1e;
     text-decoration: none;
-    padding-right: 26px;
-    display: block;
   }
   &__author {
     color: #858585;
@@ -17,6 +15,7 @@
     }
   }
   &__main-block {
+    padding-right: 26px;
     position: relative;
   }
 }
