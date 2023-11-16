@@ -1,13 +1,13 @@
 <script setup>
-import MyFooter from '@/components/footer/footer.vue';
-import MyHeader from '@/components/header/header.vue';
+import MyFooter from '@/components/TheFooter/TheFooter.vue';
+import MyHeader from '@/components/TheHeader/TheHeader.vue';
 
 </script>
 
 <template>
-  <my-header />
-  <router-view />
-  <my-footer />
+  <MyHeader/>
+  <RouterView/>
+  <MyFooter/>
 </template>
 
 <style lang="scss">

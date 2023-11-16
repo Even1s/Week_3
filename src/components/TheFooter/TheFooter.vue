@@ -11,5 +11,5 @@
 </template>
 
 <style lang="scss" scoped>
-@import "footer";
+@import "TheFooter";
 </style>

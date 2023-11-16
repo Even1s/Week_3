@@ -27,5 +27,5 @@ function switchImg(buttonImg) {
 </template>
 
 <style scoped lang="scss">
-@import "repliesButton";
+@import "RepliesButton";
 </style>

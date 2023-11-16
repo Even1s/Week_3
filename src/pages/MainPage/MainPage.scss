@@ -15,9 +15,6 @@
     &::marker {
       content: none;
     }
-    &:first-child {
-      border: 0;
-    }
   }
   &__title {
     font-size: 22px;
@@ -27,14 +24,13 @@
       text-decoration: underline;
     }
   }
-}
-.container {
-  #reload {
-    position: static;
+  &__author {
+    color: #858585;
   }
 }
 .reload-block {
   display: flex;
-  gap: 6px;
   align-items: center;
+  gap: 4px;
+  margin: 8px 0;
 }

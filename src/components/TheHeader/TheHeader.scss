@@ -1,5 +1,5 @@
 .header {
-  background-color: #416AEBFF;
+  background-color: #ff6600;
   color: #F1F1F1FF;
   padding: 6px 12px;
   &__links-block {
@@ -15,8 +15,14 @@
       color: #F1F1F1FF;
     }
   }
+  &__logo {
+    display: flex;
+    align-items: center;
+    border: solid 2px #F1F1F1FF;
+  }
 }
 .container {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
 }

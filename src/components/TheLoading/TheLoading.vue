@@ -10,5 +10,5 @@
 </template>
 
 <style scoped lang="scss">
-@import "loading";
+@import "TheLoading";
 </style>

@@ -6,12 +6,12 @@ const router = createRouter({
         {
             path: '/',
             name: 'main',
-            component: ()=> import('@/pages/main/main.vue')
+            component: ()=> import('@/pages/MainPage/MainPage.vue')
         },
         {
             path: '/post/:postId',
             name: 'post',
-            component: ()=> import('@/pages/post/post.vue')
+            component: ()=> import('@/pages/PostPage/PostPage.vue')
         }
     ]
 })

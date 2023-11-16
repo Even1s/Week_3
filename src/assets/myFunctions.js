@@ -33,7 +33,7 @@ export function getComments(commentId) {
 export function getPostsIdNew() {
     return new Promise((resolve, reject)=>{
         axios.get('https://hacker-news.firebaseio.com/v0/newstories.json')
-            .then((response)=>{ resolve(response.data)})
+            .then((response)=>{ resolve(response.data.slice(0, 200))})
             .catch((error)=>{ reject(error) })
     })
 }
